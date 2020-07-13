@@ -2,9 +2,7 @@ FROM rustlang/rust:nightly-slim
 
 WORKDIR /root
 
-COPY . .
-
-RUN cp ./config  /usr/local/cargo/config
+COPY ./config  /usr/local/cargo/config
 RUN echo \
     deb http://mirrors.163.com/debian/ buster main contrib non-free\
     deb http://mirrors.163.com/debian/ buster-updates main contrib non-free\
